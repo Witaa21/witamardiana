@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 3px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #1A2238;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	
+	.moon{
+		position: relative;
+		top: -8em;
+		left: -8em;
+		height: 5em;
+		width: 5em;
+		border-radius: 50%;
+		background: #F6EDBD;
+		box-shadow: 0px 0px 12px 0px #F6EDBD;
+		
+		.spots{
+			position: absolute;
+			border-radius: 50%;
+			background: #ECE1A8;
+		}
+		.spot-1{
+			top: 1.5em;
+			left: .5em;
+			height: 17px;
+			width: 17px;
+		}
+		.spot-2{
+			top: 3.5em;
+			left: 1.3em;
+			height: 10px;
+			width: 10px;
+		}
+		.spot-3{
+			top: 2em;
+			left: 3.7em;
+			height: 7px;
+			width: 7px;
+		}
+		.spot-4{
+			top: 1em;
+			left: 2.2em;
+			height: 8px;
+			width: 8px;
+		}
+		.spot-5{
+			top: 1.7em;
+			left: 2.6em;
+			height: 8px;
+			width: 8px;
+		}
+		.spot-6{
+			top: 3.2em;
+			left: 3.5em;
+			height: 11px;
+			width: 11px;
+		}
+		.spot-7{
+			top: 4em;
+			left: 2.5em;
+			height: 7px;
+			width: 7px;
+		}
+		.spot-8{
+			top: 2.5em;
+			left: 2.6em;
+			height: 12px;
+			width: 12px;
+		}
+		.spot-9{
+			top: 3.2em;
+			left: 2em;
+			height: 5px;
+			width: 5px;
+		}
+		.spot-10{
+			top: .8em;
+			left: 3.8em;
+			height: 8px;
+			width: 8px;
+		}
+	}
+	
+	.clouds{
+		position: absolute;
+		
+		.cloud-1{
+			position: absolute;
+			left: -17em;
+			height: 18em;
+			width: 20em;			
+			border-radius: 50%;
+			background: #303C5D;
+			z-index: 2;
+		}
+		.cloud-2{
+			position: absolute;
+			top: -2em;
+			left: -8em;
+			height: 22em;
+			width: 24em;			
+			border-radius: 50%;
+			background: #303C5D;
+			z-index: 3;
+		}
+		.cloud-3{
+			position: absolute;
+			top: 0em;
+			left: 6em;
+			height: 18em;
+			width: 20em;			
+			border-radius: 50%;
+			background: #303C5D;
+			z-index: 2;
+		}
+		.cloud-4{
+			position: absolute;
+			top: -4em;
+			left: -16em;
+			height: 22em;
+			width: 24em;			
+			border-radius: 50%;
+			background: #394568;
+			z-index: 1;
+		}
+		.cloud-5{
+			position: absolute;
+			top: -6em;
+			left: -4em;
+			height: 22em;
+			width: 24em;			
+			border-radius: 50%;
+			background: #394568;
+			z-index: 1;
+		}
+	}
+	
+	.weather{
+		position: absolute;
+		top: 9.2em;
+		left: -10em;
+		height: 6em;
+		width: 26em;
+		background: #fff;
+		margin-left: -.5em;
+		color: #1A2238;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		z-index: 5;
+		
+		.temp{
+			font-size: 3em;
+		}
+		
+		.metrics{
+			display: flex;
+			flex-direction: column;
+			
+			span{
+				margin: .2em 0;
+			}
+		}
+		
+		.week-preview{
+			border-spacing: .2em .2em;
+			
+			tr{
+				text-align: right;
+			}
+		}
+	}
+}
